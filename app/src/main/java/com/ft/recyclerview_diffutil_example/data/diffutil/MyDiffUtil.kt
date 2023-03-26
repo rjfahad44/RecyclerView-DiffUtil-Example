@@ -4,8 +4,8 @@ import androidx.recyclerview.widget.DiffUtil
 import com.ft.recyclerview_diffutil_example.data.model.Person
 
 class MyDiffUtil(
-    var oldList: List<Person>,
-    var newList: List<Person>
+    private var oldList: List<Person>,
+    private var newList: List<Person>
     ): DiffUtil.Callback() {
     override fun getOldListSize(): Int = oldList.size
 
